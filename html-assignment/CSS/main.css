@@ -1,24 +1,78 @@
+/* 1. Inheritance & Base Styles */
 html {
+    /* Requirement: Increase font size to 18px */
     font-size: 18px;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif; 
+    /* Requirement: Target body to change font family */
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4;
 }
 
-h1,h2,h3,h4 {
+/* 2. Select Multiple Elements */
+header, footer {
+    /* Requirement: Select both header and footer and add same background color */
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* 3. Class Selector */
+.Akal {
+    /* Requirement: Use class 'site-title' to change heading color */
+    color: #2c3e50;
+}
+
+/* 4. Id Selector & Box Shadow */
+#my-image {
+    /* Requirement: Add id 'my-image' with 0 horiz/vert, 2px blur, 1px spread, black */
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+/* 5. Hobby List Styling */
+ul {
+    /* Requirement: Replace bullets with squares */
+    list-style-type: square;
+}
+
+/* 6. nth-child Selector */
+li:nth-child(odd) {
+    /* Requirement: Add background to the odd list items in hobby list */
+    background-color: #e0e0e0;
+}
+
+/* 7. Styling the Navigation */
+nav ul {
+    /* Requirement: Remove bullets from unordered list in navigation */
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    /* Requirement: Remove underline from links */
+    text-decoration: none;
+    /* Requirement: Add background and border to the links */
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+/* 8. Hover/Focus States */
+nav a:hover, nav a:focus {
+    /* Requirement: Change background color on hover or focus state */
+    background-color: aquamarine;
+    color: #f2f2f2;
+}
+
+/* 9. Your Existing Typography Styles */
+h1, h2, h3, h4 {
     font-weight: bold;
 }
 
 header {
-    font-size: 200%;
+    /* Text transform to uppercase for header content */
     text-transform: uppercase;
-}
-
-h1 {
-    font-size: 2rem;
-    padding-bottom: 1rem;
 }
 
 p {
