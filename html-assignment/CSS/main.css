@@ -6,7 +6,7 @@ body {
 
 /* Requirement: Select multiple elements (header and footer) with same background */
 header, footer {
-    background-color: rgb(132, 171, 244);
+    background-color: lightblue;
     padding: 10px;
 }
 
@@ -39,7 +39,7 @@ nav ul {
 
 nav a {
     text-decoration: none; /* Remove underline */
-    background-color: grey;
+    background-color: gre;
     border: 1px solid #333;
     padding: 5px 10px;
 }
