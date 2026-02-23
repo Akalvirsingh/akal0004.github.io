@@ -1,53 +1,26 @@
-/* Inheritance - Body tag */
+html {
+    font-size: 16px;
+}
+
 body {
-    font-family: Arial, sans-serif; /* You can choose your preferred font */
-    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 1.4;
 }
 
-/* Select multiple elements */
-header, footer {
-    background-color: #f0f0f0; /* Light grey background */
+h1,h2,h3,h4 {
+    font-weight: bold;
 }
 
-/* Class selector */
-.site-title {
-    color: #2c3e50; /* Changes text color of the h1 */
+header {
+    font-size: 200%;
+    text-transform: uppercase;
 }
 
-/* ID selector - Box shadow */
-#my-image {
-    box-shadow: 0 0 2px 1px black; 
-    /* horizontal, vertical, blur, spread, color */
+h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
 }
 
-/* Hobby list - Replace bullets with squares */
-ul {
-    list-style-type: square;
-}
-
-/* nth-child selector - Background for odd list items */
-li:nth-child(odd) {
-    background-color: #e8f4fd;
-}
-
-/* --- Styling the Navigation --- */
-
-/* Remove bullets and underline for nav links */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav a {
-    text-decoration: none;
-    background-color: #ddd;
-    border: 1px solid #bbb;
-    padding: 5px 10px;
-    display: inline-block;
-}
-
-/* Hover/Focus state */
-nav a:hover, nav a:focus {
-    background-color: #333;
-    color: white;
+p {
+    margin-bottom: 1rem;
 }
