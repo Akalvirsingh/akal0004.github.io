@@ -6,7 +6,7 @@ body {
 
 /* Requirement: Select multiple elements (header and footer) with same background */
 header, footer {
-    background-color: cornflowerblue;
+    background-color: rgb(65, 108, 187);
     padding: 10px;
 }
 
