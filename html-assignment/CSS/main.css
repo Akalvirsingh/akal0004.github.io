@@ -30,7 +30,7 @@ header, footer {
 .hobby-list li:nth-child(odd) {
     background-color: aquamarine;
     /* This matches your header gold */
-    color: white;
+    color: black 
     /* Make the text more readable on the dark background */
 }
 
