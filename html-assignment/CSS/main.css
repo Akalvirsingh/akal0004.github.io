@@ -28,10 +28,8 @@ header, footer {
 
 /* Requirement: nth-child selector for odd items background */
 .hobby-list li:nth-child(odd) {
-    background-color: navy
-    /* This matches your header gold */
-    color: black 
-    /* Make the text more readable on the dark background */
+    background-color: #e3bc8e;
+    /* This is a tan color similer to the example */
 }
 
 /* Requirement: Styling the Navigation */
