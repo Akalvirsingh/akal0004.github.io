@@ -45,7 +45,7 @@ nav li {
 }       
 
 nav a {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; /* Remove underline from all links */
     background-color: #eee;
     border: 1px solid #333;
     padding: 10px 20px;
