@@ -51,5 +51,5 @@ nav a {
 
 /* Requirement: Hover/Focus state background change */
 nav a:hover, nav a:focus {
-    background-color: #ffd700;
+    background-color: #79b217;
 }
