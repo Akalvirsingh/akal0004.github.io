@@ -29,7 +29,7 @@ header, footer {
 /* Requirement: nth-child selector for odd items background */
 .hobby-list li:nth-child(odd) {
     background-color: #e3bc8e;
-    /* This is a tan color similer to the example */
+    /* This is a tan color from the example */
 }
 
 /* Requirement: Styling the Navigation */
