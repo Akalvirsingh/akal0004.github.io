@@ -3,8 +3,21 @@ font-family: Arial;
 background:#b9d3d0;
 }
 
+header img{
+width:80px;
+height: 80px;
+object-fit: cover;
+}
+
+.content img{
+width:200%;
+height: 200%;
+object-fit: cover;
+float: left;
+margin-right: 15px;
+}
+
 .container{
-width:800px;
 margin:auto;
 background:white;
 }
