@@ -4,34 +4,33 @@ body{
     background:#cfd8d6;
 }
 
-/* Starfish image in article */
+/* HERO SECTION */
+#hero{
+    height:250px;            /* controls big image size */
+    overflow:hidden;
+    text-align:center;
+}
+
+/* HERO IMAGE */
+#hero img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+/* LOGO IMAGE */
+header img{
+    width:60px;
+    height:60px;
+}
+
+/* STARFISH IMAGE IN ARTICLE */
 .starfish{
     width:180px;
     height:180px;
     object-fit:cover;
     float:left;
     margin-right:15px;
-}
-
-/* Header logo image */
-header img{
-    width:60px;
-    height:60px;
-}
-
-/* Hero background */
-#hero{
-    background-image:url("lonestarfishonbeach.jpg");
-    background-size:cover;
-    background-position:center;
-    height:250px;
-}
-
-/* Page width */
-main{
-    max-width:900px;
-    margin:auto;
-    padding:20px;
 }
 
 header{
