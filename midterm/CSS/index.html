@@ -1,99 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<title>Lone Starfish</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lone Starfish - Marine Life</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div id="wrapper">
+    <header class="hero" id="home">
+        <img src="starfish-wide.jpg" alt="Starfish Banner" class="hero-img">
+        <div class="hero-text">
+            <h1>Lone Starfish</h1>
+        </div>
+    </header>
 
-<header>
-<img src="images/lone-starfish-wide.jpg" alt="Starfish banner">
-<h1>Lone Starfish</h1>
-</header>
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#story">STORY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
 
-<nav>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Story</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+    <main class="container">
+        <section id="story" class="content-section">
+            <h2>Life of a Starfish</h2>
+            <div class="flex-row">
+                <img src="starfish-square.jpg" alt="Starfish" class="side-img">
+                <div class="text-block">
+                    <p>Starfish, or sea stars, have inhabited the Earth's vast oceans for over 450 million years, making them older than many dinosaur species. Despite their common name, they are not actually fish but marine invertebrates known as echinoderms. They exist in a stunning variety of shapes and colors, ranging from deep crimson to vibrant electric blue, allowing them to camouflage against diverse coral reefs or sandy sea floors.</p>
+                    <p>These fascinating creatures possess a unique biological makeup; they lack a centralized brain and a traditional blood system. Instead, they utilize a complex hydraulic water vascular system to move their hundreds of tiny tube feet. This system allows them to grip surfaces with incredible strength, which is essential for opening the shells of their prey, such as clams and mussels. Their ability to survive in extreme environments—from freezing polar waters to scorching tropical tide pools—is a testament to their evolutionary resilience.</p>
+                </div>
+            </div>
 
-<main>
+            <hr>
 
-<article>
-<h2>Life of a Starfish</h2>
+            <h2>Ecological Impact</h2>
+            <p>As keystone predators, starfish play a critical role in maintaining the health of marine ecosystems. By feeding on dominant species like mussels, they prevent any single species from overpopulating an area, which in turn allows a greater variety of smaller organisms to thrive. Without the "Lone Starfish" keeping the balance, many underwater habitats would face a collapse in biodiversity. Today, they face threats from rising ocean temperatures and pollution, making the study of their biology more important than ever for conservation efforts.</p>
+        </section>
 
-<img src="images/lone-starfish.jpg" alt="A single starfish" class="article-img">
+        <section id="contact" class="content-section">
+            <hr>
+            <h2>Contact & Conservation</h2>
+            <p>If you are interested in learning more about marine biology or how you can help protect the habitats of these incredible sea stars, please reach out to our research team. We offer educational resources for students and volunteer opportunities for local beach cleanups.</p>
+            <div class="contact-box">
+                <p><strong>Email:</strong> info@lonestarfish.org</p>
+                <p><strong>Location:</strong> Marine Research Center, Pier 12</p>
+            </div>
+        </section>
+    </main>
 
-<p>
-Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
-</p>
-
-</article>
-
-<section id="facts">
-
-<h3>Facts About Starfish</h3>
-
-<ul>
-<li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
-<li>Waryfish, “lionfish”, longfin smelt; leopard danio dragonfish; Lost River sucker, mojarra.</li>
-<li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
-<li>Waryfish, “lionfish”, longfin smelt; leopard danio dragonfish; Lost River sucker, mojarra.</li>
-</ul>
-
-</section>
-
-<section id="contact">
-
-<h3>Contact to learn more</h3>
-
-<form action="#">
-
-<div class="form-item">
-<label for="user-name">Your Name</label>
-<input type="text" id="user-name" name="user-name">
-</div>
-
-<div class="form-item">
-<label for="user-email">Your Email</label>
-<input type="email" id="user-email" name="user-email">
-</div>
-
-<div class="form-item">
-<label for="user-message">Your Message</label>
-<textarea id="user-message" name="user-message"></textarea>
-</div>
-
-<fieldset>
-
-<legend>Would you like to visit the starfish?</legend>
-
-    <label for="yes">Yes <input type="radio" id="yes" name="visit"></label>
-    <label for="no">No <input type="radio" id="no" name="visit"></label>
-    <label for="maybe">Maybe <input type="radio" id="maybe" name="visit"></label>
-
-</fieldset>
-
-<button type="submit">SEND</button>
-
-</form>
-
-</section>
-
-</main>
-
-<footer>
-<p>&copy; Lone Starfish.</p>
-</footer>
-
-</div>
+    <footer>
+        <p>&copy; 2024 Lone Starfish Project</p>
+    </footer>
 
 </body>
 </html>
