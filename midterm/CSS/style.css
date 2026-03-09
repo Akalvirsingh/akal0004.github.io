@@ -4,26 +4,27 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Smoothly slides the page when clicking buttons */
 }
 
 body {
+    background-color: #aad4cf; /* Your teal background color */
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #aad4cf; /* Teal background */
     padding: 20px 0;
 }
 
+/* 1000px Centered Box */
 #wrapper {
     width: 1000px;
     margin: 0 auto;
     background-color: white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 /* ================= HEADER ================= */
 header {
-    position: relative;
+    position: relative; /* Allows text to sit on top of image */
 }
 
 .header-img {
@@ -37,15 +38,15 @@ header h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Perfectly centers text */
     color: white;
-    font-size: 4rem;
-    margin: 0;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    font-size: 4.5rem;
     text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+    margin: 0;
 }
 
-/* ================= NAVIGATION WITH VERTICAL LINES ================= */
+/* ================= NAVIGATION WITH LINES ================= */
 nav ul {
     list-style: none;
     margin: 0;
@@ -57,15 +58,15 @@ nav ul {
 nav li {
     flex: 1;
     text-align: center;
-    position: relative; /* Base for the line */
+    position: relative;
 }
 
-/* The Vertical Line */
+/* The vertical lines between items */
 nav li:not(:last-child)::after {
     content: "";
     position: absolute;
     right: 0;
-    top: 25%; /* Centers the line vertically */
+    top: 25%;
     height: 50%;
     width: 1px;
     background-color: #ccc;
@@ -73,61 +74,82 @@ nav li:not(:last-child)::after {
 
 nav a {
     display: block;
-    padding: 15px;
+    padding: 18px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 nav a:hover {
     color: #aad4cf;
 }
 
-/* ================= CONTENT & FLOAT ================= */
+/* ================= MAIN CONTENT & FLOATING ================= */
 main {
     padding: 40px;
 }
 
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #aad4cf;
+    padding-bottom: 10px;
+}
+
+/* Floating Image matches the Sea Turtle layout */
 .article-img {
     float: left;
-    width: 300px;
+    width: 320px;
     margin: 0 25px 15px 0;
     border: 1px solid #ccc;
     padding: 5px;
+    background-color: #fff;
 }
 
 p {
-    line-height: 1.8; /* Improves readability for long paragraphs */
-    margin-bottom: 25px;
+    line-height: 1.8;
+    margin-bottom: 20px;
     text-align: justify;
 }
 
-/* Form Styling */
+/* FORM STYLING */
 .contact-form label {
     display: block;
     margin-top: 15px;
     font-weight: bold;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
+.inline-label {
+    display: inline !important;
+    font-weight: normal !important;
+    margin-right: 15px;
+}
+
+input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 button {
     background-color: #333;
     color: white;
-    padding: 10px 30px;
+    padding: 12px 40px;
     border: none;
     cursor: pointer;
     font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #aad4cf;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    font-size: 0.9rem;
+    color: #777;
     border-top: 1px solid #eee;
 }

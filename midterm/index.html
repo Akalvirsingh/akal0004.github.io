@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lone Starfish - Marine Life</title>
+    <title>Lone Starfish - Marine Biology Project</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body id="home">
@@ -25,17 +25,18 @@
         <main>
             <section id="story">
                 <h2>Life of a Starfish</h2>
+                
                 <img src="images/lone-starfish.jpg" alt="Starfish" class="article-img">
                 
                 <p>
-                    Starfish, often referred to as sea stars, are remarkable marine invertebrates that have inhabited our oceans for hundreds of millions of years. Despite their common name, they are not actually fish but belong to a group of animals called echinoderms, which also includes sea urchins and sand dollars. These fascinating creatures possess a unique biological makeup; they lack a centralized brain and a traditional blood system, instead utilizing a complex hydraulic water vascular system to move their hundreds of tiny tube feet. This system allows them to grip surfaces with incredible strength, which is essential for opening the shells of their prey. Their ability to survive in extreme environments, from freezing polar waters to scorching tropical tide pools, is a testament to their evolutionary resilience and adaptive capabilities.
+                    Starfish, commonly known as sea stars, are fascinating marine invertebrates that have thrived in the Earth's vast oceans for over 450 million years. Despite their name, they are not actually fish but belong to the echinoderm family, which also includes sea urchins and sand dollars. These unique creatures possess a remarkable water vascular system that powers their hundreds of tiny tube feet, allowing them to grip surfaces with incredible strength. Because they lack a centralized brain and traditional blood system, they rely on filtering seawater to transport vital nutrients throughout their bodies. Their ability to survive in environments ranging from freezing polar depths to warm tropical tide pools is a testament to their evolutionary resilience and complex biological design.
                 </p>
                 
                 <p>
-                    As keystone predators, starfish play a critical role in maintaining the health and balance of marine ecosystems worldwide. By feeding on dominant species like mussels, they prevent any single species from overpopulating an area, which in turn allows a greater variety of smaller organisms to thrive in the habitat. This delicate ecological balance is vital for the biodiversity of coral reefs and rocky shores alike. Many species of starfish also possess the incredible ability to regenerate lost limbs, and in some rare cases, an entirely new body can grow from just a single severed arm. This remarkable regenerative power has made them a subject of intense study for biological researchers and marine scientists seeking to understand the mysteries of cellular growth and healing.
+                    As keystone predators, starfish play a vital role in maintaining the health and balance of underwater ecosystems by controlling the populations of species like mussels and clams. One of their most famous biological traits is the ability to regenerate lost limbs; in some rare instances, a completely new starfish can grow from just a single severed arm. This incredible power of regeneration makes them a subject of great interest to scientists studying cellular growth.
                 </p>
-                <div style="clear: both;"></div>
-            </section>
+                
+                <div style="clear: both;"></div> </section>
 
             <hr>
 
@@ -43,20 +44,22 @@
                 <h2>Contact to learn more</h2>
                 <form action="#" method="post" class="contact-form">
                     <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required>
 
                     <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
 
                     <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
+                    <textarea id="message" name="message" rows="5" required></textarea>
 
                     <p>Would you like to visit the starfish?</p>
-                    <label><input type="radio" name="visit" value="yes"> Yes</label>
-                    <label><input type="radio" name="visit" value="no"> No</label>
-                    <label><input type="radio" name="visit" value="maybe"> Maybe</label>
+                    <div class="radio-group">
+                        <input type="radio" name="visit" value="yes" id="yes"> <label for="yes" class="inline-label">Yes</label>
+                        <input type="radio" name="visit" value="no" id="no"> <label for="no" class="inline-label">No</label>
+                        <input type="radio" name="visit" value="maybe" id="maybe"> <label for="maybe" class="inline-label">Maybe</label>
+                    </div>
 
-                    <br><br>
+                    <br>
                     <button type="submit">SEND</button>
                 </form>
             </section>
