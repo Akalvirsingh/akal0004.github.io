@@ -1,122 +1,62 @@
-/* CSS for Midterm Assignment 
-   Includes: Absolute positioning for header, floating for article images 
-*/
-
-body {
-    background-color: #aad4cf; /* Primary color from instructions */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 20px;
+body{
+    margin:0;
+    font-family: Arial;
+    background:#cfd8d6;
 }
 
-#wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+header{
+    text-align:center;
+    padding:40px;
 }
 
-/* Header Styling - Requirement: Position title on top of image */
-header {
-    position: relative;
-    text-align: center;
-    color: white;
+.logo{
+    width:70px;
 }
 
-header img {
-    width: 100%;
-    display: block;
+nav{
+    background:white;
+    text-align:center;
+    padding:10px;
 }
 
-header h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+nav a{
+    margin:20px;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
 }
 
-/* Navigation */
-nav ul {
-    list-style: none;
-    background-color: #f4f4f4;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid #ddd;
+.container{
+    display:flex;
 }
 
-nav li a {
-    display: block;
-    padding: 15px 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    text-transform: uppercase;
+.left{
+    width:50%;
+    padding:40px;
+    background:white;
 }
 
-/* Main Content */
-main {
-    padding: 30px;
+.right{
+    width:50%;
+    position:relative;
 }
 
-/* Requirement: Image with text wrapping around it */
-.article-img {
-    float: left;
-    margin: 0 20px 10px 0;
-    border: 1px solid #ccc;
-    max-width: 250px;
+.bigimg{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-/* Facts Section */
-#facts ul {
-    padding-left: 20px;
-    line-height: 1.6;
+.title{
+    position:absolute;
+    top:50%;
+    left:40%;
+    color:white;
+    font-size:60px;
 }
 
-/* Form Styling */
-.form-item {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box; /* Ensures padding doesn't break layout */
-    border: 1px solid #ccc;
-}
-
-textarea {
-    height: 100px;
-}
-
-fieldset {
-    border: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-button {
-    background-color: #f4f4f4;
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-}
-
-footer {
-    text-align: right;
-    padding: 10px 30px;
-    font-size: 0.8rem;
-    border-top: 1px solid #eee;
+.smallimg{
+    width:150px;
+    float:left;
+    margin-right:20px;
 }
