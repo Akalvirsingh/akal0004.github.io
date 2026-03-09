@@ -1,97 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Lone Starfish</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lone Starfish - Marine Life</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
+<body id="home">
 
-<body>
+    <div id="wrapper">
+        <header>
+            <img src="images/lone-starfish-wide.jpg" alt="Starfish Banner" class="header-img">
+            <h1>Lone Starfish</h1>
+        </header>
 
-<div id="wrapper">
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#story">STORY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
 
-<header>
-<img src="images/lone-starfish-wide.jpg.jpeg" alt="A lone starfish on the beach" class="header-img">
-<h1>Lone Starfish</h1>
-</header>
+        <main>
+            <section id="story">
+                <h2>Life of a Starfish</h2>
+                <img src="images/lone-starfish.jpg" alt="Starfish" class="article-img">
+                
+                <p>
+                    Starfish, often referred to as sea stars, are remarkable marine invertebrates that have inhabited our oceans for hundreds of millions of years. Despite their common name, they are not actually fish but belong to a group of animals called echinoderms, which also includes sea urchins and sand dollars. These fascinating creatures possess a unique biological makeup; they lack a centralized brain and a traditional blood system, instead utilizing a complex hydraulic water vascular system to move their hundreds of tiny tube feet. This system allows them to grip surfaces with incredible strength, which is essential for opening the shells of their prey. Their ability to survive in extreme environments, from freezing polar waters to scorching tropical tide pools, is a testament to their evolutionary resilience and adaptive capabilities.
+                </p>
+                
+                <p>
+                    As keystone predators, starfish play a critical role in maintaining the health and balance of marine ecosystems worldwide. By feeding on dominant species like mussels, they prevent any single species from overpopulating an area, which in turn allows a greater variety of smaller organisms to thrive in the habitat. This delicate ecological balance is vital for the biodiversity of coral reefs and rocky shores alike. Many species of starfish also possess the incredible ability to regenerate lost limbs, and in some rare cases, an entirely new body can grow from just a single severed arm. This remarkable regenerative power has made them a subject of intense study for biological researchers and marine scientists seeking to understand the mysteries of cellular growth and healing.
+                </p>
+                <div style="clear: both;"></div>
+            </section>
 
-<nav>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Story</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+            <hr>
 
-<main>
+            <section id="contact">
+                <h2>Contact to learn more</h2>
+                <form action="#" method="post" class="contact-form">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name">
 
-<article>
-<h2>Life of a Starfish</h2>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email">
 
-<img src="images/lone-starfish.jpg.jpeg" alt="A lone starfish on the beach" class="article-img">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
 
-<p>
-Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
-</p>
+                    <p>Would you like to visit the starfish?</p>
+                    <label><input type="radio" name="visit" value="yes"> Yes</label>
+                    <label><input type="radio" name="visit" value="no"> No</label>
+                    <label><input type="radio" name="visit" value="maybe"> Maybe</label>
 
-</article>
+                    <br><br>
+                    <button type="submit">SEND</button>
+                </form>
+            </section>
+        </main>
 
-<section id="facts">
-
-<h3>Facts About Starfish</h3>
-
-<ul>
-<li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
-<li>Waryfish, “lionfish”, longfin smelt; leopard danio dragonfish; Lost River sucker, mojarra.</li>
-<li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
-<li>Waryfish, “lionfish”, longfin smelt; leopard danio dragonfish; Lost River sucker, mojarra.</li>
-</ul>
-
-</section>
-
-<section id="contact">
-<h3>Contact to learn more</h3>
-
-<form action="#">
-
-<div class="form-item">
-<label for="user-name">Your Name</label>
-<input type="text" id="user-name" name="user-name">
-</div>
-
-<div class="form-item">
-<label for="user-email">Your Email</label>
-<input type="email" id="user-email" name="user-email">
-</div>
-
-<div class="form-item">
-<label for="user-message">Your Message</label>
-<textarea id="user-message" name="user-message"></textarea>
-</div>
-
-<fieldset>
-
-<legend>Would you like to visit the starfish?</legend>
-
-    <label for="yes">Yes <input type="radio" id="yes" name="visit"></label>
-    <label for="no">No <input type="radio" id="no" name="visit"></label>
-    <label for="maybe">Maybe <input type="radio" id="maybe" name="visit"></label>
-
-</fieldset>
-
-<button type="submit">SEND</button>
-
-</form>
-
-</section>
-
-</main>
-
-<footer>
-<p>&copy; Lone Starfish.</p>
-</footer>
-
-</div>
+        <footer>
+            <p>&copy; 2026 Lone Starfish Project</p>
+        </footer>
+    </div>
 
 </body>
 </html>
